@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Roxborough CF";
+  src: url("font/RoxboroughCF-Regular.woff");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: url("img/background1.png");
+}
+
+.button {
+  text-align: center;
+  transition: all 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s;
+}
+
+.button:hover {
+  transform: translateY(20px);
+}
+
+.decoration {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decoration > div {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.5;
+}
+
+.purple {
+  background: mediumpurple;
+  margin-right: -10vh;
+}
+
+.blue {
+  background: lightsteelblue;
+  margin-left: -10vh;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen.center {
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Roxborough CF";
+}
+
+h2 {
+  font-family: Roboto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+
+.title {
+  font-size: 10em;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  top: -70px;
+}
+
+.webview {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20vw;
+}
+
+.webview .view {
+  margin: 0 5vw;
+}
+
+.webview .view .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+
+.webview .view .wrapper.vertical {
+  flex-direction: column;
+}
+
+.webview .view img, .webview .view h1 {
+  width: 100%;
+}
+
+#home {
+  flex-direction: column;
+  align-items: normal;
+}
+
+#menu a {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 35px;
+  transition: all 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s;
+}
+
+#menu a:hover {
+  transform: translateX(20px);
+}
