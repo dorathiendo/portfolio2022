@@ -90,6 +90,13 @@ h2 {
   letter-spacing: 2px;
 }
 
+h3 {
+  font-family: Roboto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 p {
   font-family: Roboto;
   font-size: 18px;
@@ -98,7 +105,7 @@ p {
 }
 
 .title {
-  font-size: 10em;
+  font-size: 10vw;
   margin: 0;
   text-align: center;
   width: 100%;
@@ -153,4 +160,12 @@ p {
 
 .menu a:hover {
   margin-left: 20px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 15px;
 }
