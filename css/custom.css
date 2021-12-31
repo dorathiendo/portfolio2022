@@ -76,6 +76,7 @@ html, body {
   overflow: scroll;
 }
 
+
 .screen.center {
   justify-content: center;
 }
@@ -99,9 +100,7 @@ h3 {
 
 p {
   font-family: Roboto;
-  font-size: 18px;
   font-weight: lighter;
-  line-height: 35px;
 }
 
 .title {
