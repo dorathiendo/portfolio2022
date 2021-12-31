@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 @font-face {
   font-family: "Roxborough CF";
   src: url("font/RoxboroughCF-Regular.woff");
@@ -12,6 +14,14 @@ html, body {
 .button {
   text-align: center;
   transition: all 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s;
+  margin: 20px 0;
+}
+
+.button.fixed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 40px;
 }
 
 .button:hover {
@@ -54,7 +64,7 @@ html, body {
   top: 0;
   left: 0;
   z-index: 1;
-  overflow: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -62,6 +72,8 @@ html, body {
   display: flex;
   align-items: center;
   height: 100vh;
+  position: relative;
+  overflow: scroll;
 }
 
 .screen.center {
@@ -80,7 +92,7 @@ h2 {
 
 p {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
   line-height: 35px;
 }
@@ -117,12 +129,21 @@ p {
   width: 100%;
 }
 
+.screenshot {
+  box-shadow: 47px 21px 131px -67px rgba(0,0,0,0.5);
+}
+
 #home {
   flex-direction: column;
   align-items: normal;
 }
 
-#menu a {
+.menu {
+  width: 50vw;
+}
+
+.menu a {
+  display: block;
   font-family: Roboto;
   font-size: 20px;
   font-weight: lighter;
@@ -130,6 +151,6 @@ p {
   transition: all 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s;
 }
 
-#menu a:hover {
-  transform: translateX(20px);
+.menu a:hover {
+  margin-left: 20px;
 }
