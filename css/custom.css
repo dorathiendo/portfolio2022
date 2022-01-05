@@ -5,6 +5,11 @@
   src: url("font/RoxboroughCF-Regular.woff");
 }
 
+@keyframes flashing {
+  0% {opacity: 0%;}
+  100% {opacity: 50%;}
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -15,6 +20,10 @@ html, body {
   text-align: center;
   transition: all 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s;
   margin: 20px 0;
+}
+
+.button img {
+  width: 10px;
 }
 
 .button.fixed {
@@ -50,11 +59,13 @@ html, body {
 .purple {
   background: mediumpurple;
   margin-right: -10vh;
+  /*animation: flashing 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s infinite alternate;*/
 }
 
 .blue {
   background: lightsteelblue;
   margin-left: -10vh;
+  /*animation: flashing 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite alternate;*/
 }
 
 .body {
@@ -114,7 +125,6 @@ p {
 .webview {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20vw;
 }
 
 .webview .view {
@@ -124,18 +134,23 @@ p {
 .webview .view .wrapper {
   display: flex;
   justify-content: center;
-  width: 50vw;
+  width: 20vw;
 }
 
 .webview .view .wrapper.vertical {
   flex-direction: column;
 }
 
-.webview .view img, .webview .view h1 {
+.webview .view .wrapper.wide {
+  width: 50vw;
+}
+
+.webview .view h1 {
   width: 100%;
 }
 
 .screenshot {
+  width: 100%;
   box-shadow: 47px 21px 131px -67px rgba(0,0,0,0.5);
 }
 
@@ -167,4 +182,21 @@ p {
   object-fit: cover;
   border-radius: 50%;
   margin: 0 15px;
+}
+
+.screenshot-app {
+  width: 15vw;
+}
+
+.screenshot-app-small {
+  width: 10vw;
+}
+
+.view.mobile img {
+  width: 100%;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-evenly;
 }

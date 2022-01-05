@@ -8,7 +8,6 @@
 
     .webview {
         display: block;
-        padding-left: 0;
     }
 
     .webview .view .wrapper {
